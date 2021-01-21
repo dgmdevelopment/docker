@@ -41,7 +41,7 @@ esac; done
 ## change to some other path to use as default
 # ARG_HOME="~/rady"
 # ARG_HOME="$(script_home)"
-ARG_HOME=""
+ARG_HOME="$(script_home)"
 IMAGE_VERSION="latest"
 NB_USER="jovyan"
 CODE_WORKINGDIR="/home/${NB_USER}/git"
@@ -51,7 +51,7 @@ NETWORK="rsm-docker"
 IMAGE=${ID}/${LABEL}
 # Choose your timezone https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 # TIMEZONE="Europe/Amsterdam"
-TIMEZONE="America/Los_Angeles"
+TIMEZONE="America/New_York"
 if [ "$ARG_TAG" != "" ]; then
   IMAGE_VERSION="$ARG_TAG"
   DOCKERHUB_VERSION=${IMAGE_VERSION}
