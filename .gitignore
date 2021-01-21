@@ -9,3 +9,5 @@
 rsm-vscode/*.sh
 rsm-vscode/p*.conf
 rsm-vscode/*.txt
+# Ignore the data directory
+data/
